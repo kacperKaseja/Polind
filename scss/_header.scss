@@ -1,0 +1,146 @@
+.header {
+    display: flex;
+    padding: 10px 10px;
+    position: fixed;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        display: flex;
+        width: 200px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo-paragrap {
+        font-size: 40px;
+        font-weight: bolder;
+        color: white;
+    }
+
+    &__hamburger {
+        padding: 10px;
+        display: inline-block;
+        cursor: pointer;
+        background-color: transparent;
+        border: 0;
+        margin: 0;
+        position: relative;
+    }
+
+    .hamburger__box {
+        width: 34px;
+        height: 24px;
+        display: inline-block;
+        position: relative;
+    }
+
+    .hamburger__inner {
+        @include hamburger-line;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: background-color .1s .2s ease-in-out;
+    }
+
+    .hamburger__inner::before,
+    .hamburger__inner::after {
+        @include hamburger-line;
+        content: "";
+        transition: transform .2s .2s ease-in-out;
+    }
+
+    .hamburger__inner::before {
+        top: -10px;
+    }
+
+    .hamburger__inner::after {
+        top: 10px;
+
+    }
+
+    &__nav {
+        display: none;
+        // opacity: 0;
+        width: 60%;
+        color: white;
+        transition: opacity 0.5s;
+
+
+        &--active {
+            display: flex;
+            width: 60%;
+            // background-color: white;
+            opacity: 1;
+        }
+    }
+
+}
+
+.nav__list {
+    list-style: none;
+
+    &-item {
+        color: white;
+        margin: 10px 10px;
+    }
+
+}
+
+.nav__anchor {
+    color: #8D97A5;
+    text-decoration: none;
+    font-size: 30px;
+    background-color: white;
+    padding: 0 10px;
+    border: 2px solid #8D97A5;
+}
+
+.hamburger--active .hamburger__inner {
+    background-color: transparent;
+}
+
+.hamburger--active .hamburger__inner::before {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger--active .hamburger__inner::after {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+@media(min-width:768px) {
+    .header {
+
+        &__hamburger {
+            display: none;
+        }
+
+        &__nav {
+            display: flex;
+            flex-direction: row;
+
+            ul {
+                display: flex;
+
+                a {
+                    background-color: transparent;
+                    border: none;
+                    color: white;
+                    font-size: 20px;
+                }
+            }
+        }
+
+    }
+}

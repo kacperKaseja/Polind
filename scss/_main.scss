@@ -1,0 +1,55 @@
+.landing {
+    background: url('../img/Photo.png') no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    &__wrapper {
+        text-align: center;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__h1 {
+        color: white;
+        font-size: 45px;
+        padding: 50px 0;
+    }
+
+    &__h1-span {
+        color: $red;
+    }
+
+    &__p1 {
+        margin: 10px 0;
+        color: $btnGray;
+    }
+
+    &__button {
+        @include button;
+        margin-top: 70px;
+    }
+
+}
+
+@media(min-width:768px) {
+    .landing {
+        &__h1 {
+            font-size: 80px;
+        }
+
+        &__p1 {
+            font-size: 30px;
+        }
+
+        &__button {
+            font-size: 25px;
+            padding: 20px 40px;
+            border-radius: 50px;
+        }
+
+
+
+    }
+}

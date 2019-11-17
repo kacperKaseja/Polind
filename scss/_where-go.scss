@@ -1,0 +1,138 @@
+.where-go {
+    display: flex;
+    flex-direction: column;
+
+    &__wrapper {
+        width: 90%;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__h2 {
+        @include h2;
+    }
+
+    &__search {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 30px;
+    }
+
+    &__search-input {
+        width: 80%;
+        font-size: 20px;
+        border: none;
+        padding: 10px 20px;
+        outline: none;
+    }
+
+    &__search-input:focus {
+        border: 2px solid #606F81;
+        border-radius: 25px;
+    }
+
+    &__search-label {
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+}
+
+.where-go__button-travel {
+    text-align: center;
+}
+
+.travel-item {
+    @include button;
+    margin: 5px 10px;
+    color: white;
+    background-color: #BDC8D9;
+}
+
+.where-go__button-place {
+    text-align: center;
+    margin: 10px;
+}
+
+.place-item {
+    @include button;
+    margin: 5px 10px;
+    background-color: transparent;
+    color: #BDC8D9;
+    border: 1px solid #BDC8D9;
+}
+
+.where-go__container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container__item {
+    margin: 20px 0;
+}
+
+.container__item-img {
+    width: 100%;
+    color: #606F81;
+}
+
+.container__item-h3 {
+    font-size: 30px;
+    margin: 10px 0;
+    font-weight: 300;
+    color: #606F81;
+}
+
+.container__item-p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #606F81;
+    margin: 10px 0;
+}
+
+.containet__item-btn {
+    @include button;
+    margin: 0;
+    background-color: transparent;
+    color: #BDC8D9;
+}
+
+@media(min-width:768px) {
+    .where-go {
+        display: flex;
+        flex-direction: row;
+
+        &__wrapper {
+            width: 80%;
+        }
+
+        &__container {
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+    }
+
+    .container__item {
+        flex: 0 1 45%;
+        height: 250px;
+    }
+}

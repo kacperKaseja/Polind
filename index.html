@@ -13,30 +13,147 @@
 
 <body>
     <header class="header">
-        <div class="header__logo">
-            <img src="img/Logo.svg" class="header__logo-svg" alt="polind logo">
-            <p class="header__logo-paragrap">Polind</p>
+        <div class="header__wrapper">
+            <div class="header__logo">
+                <img src="img/Logo.svg" class="header__logo-svg" alt="polind logo">
+                <p class="header__logo-paragrap">Polind</p>
+            </div>
+            <button class="header__hamburger">
+                <span class="hamburger__box">
+                    <span class="hamburger__inner"></span>
+                </span>
+            </button>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__anchor">Guide</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__anchor">Journey</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__anchor">Hotels</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__anchor">Travellers</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__anchor">Search</a>
+                    </li>
+
+                </ul>
+            </nav>
         </div>
-        <nav class="header__nav">
-            <ul class="nav__list">
-                <li class="nav__list-item">
-                    <a href="#" class="nav__anchor">Guide</a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="#" class="nav__anchor">Journey</a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="#" class="nav__anchor">Home</a>
-                </li>
-            </ul>
-        </nav>
     </header>
     <main class="landing">
-        <h1 class="landing__h1">Fall in Love <br>
-            with Poland</h1>
-        <p class="landing__p1">Find your place in Poland</p>
-
+        <div class="landing__wrapper">
+            <h1 class="landing__h1">Fall in Love <br>
+                <span class="landing__h1-span">with Poland</span></h1>
+            <p class="landing__p1">Find your place in Poland</p>
+            <button class="landing__button">Search your place</button>
+        </div>
+        <div class="landing__img-wrapper"></div>
     </main>
+    <section class="where-go">
+        <div class="where-go__wrapper">
+            <h2 class="where-go__h2">Where you want to go?</h2>
+            <div class="where-go__search">
+                <input type="search" placeholder="Search place" name="search" id="search"
+                    class="where-go__search-input">
+                <label for="search" class="where-go__search-label"><img src="img/Search-1.png" alt=""></label>
+            </div>
+            <div class="where-go__button">
+                <div class="where-go__button-travel">
+                    <button class="travel-item">Journey</button>
+                    <button class="travel-item">Traveles</button>
+                    <button class="travel-item">Guide</button>
+                </div>
+                <div class="where-go__button-place">
+                    <button class="place-item">Maury</button>
+                    <button class="place-item">Cracow</button>
+                    <button class="place-item">Zakopane</button>
+                </div>
+            </div>
+            <div class="where-go__container">
+                <div class="container__item">
+                    <img src="img/Photo-1.png" alt="" class="container__item-img">
+                    <h3 class="container__item-h3">Poznań</h3>
+                    <p class="container__item-p">Wielkopolska</p>
+                    <button class="containet__item-btn">View Offers</button>
+                </div>
+                <div class="container__item">
+                    <img src="img/Photo-2.png" alt="" class="container__item-img">
+                    <h3 class="container__item-h3">Warszawa</h3>
+                    <p class="container__item-p">Mazowskie</p>
+                    <button class="containet__item-btn">View Offers</button>
+                </div>
+                <div class="container__item">
+                    <img src="img/Photo-3.png" alt="" class="container__item-img">
+                    <h3 class="container__item-h3">Wrocław</h3>
+                    <p class="container__item-p">Dolnoslaskie</p>
+                    <button class="containet__item-btn">View Offers</button>
+                </div>
+                <div class="container__item">
+                    <img src="img/Photo-4.png" alt="" class="container__item-img">
+                    <h3 class="container__item-h3">Poznań</h3>
+                    <p class="container__item-p">Wielkopolska</p>
+                    <button class="containet__item-btn">View Odders</button>
+                </div>
+                <div class="container__item">
+                    <img src="img/Photo-5.png" alt="" class="container__item-img">
+                    <h3 class="container__item-h3">Dolina Olczyska</h3>
+                    <p class="container__item-p">Malopolska</p>
+                    <button class="containet__item-btn">View Offers</button>
+                </div>
+                <div class="container__item">
+                    <img src="img/Photo-6.png" alt="" class="container__item-img">
+                    <h3 class="container__item-h3">Kozy</h3>
+                    <p class="container__item-p">Slaskie</p>
+                    <button class="containet__item-btn">View Offers</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="explore">
+        <div class="explore__wrapper">
+            <h2 class="explore__h2">Explore city</h2>
+            <div class="explore__img"><img src="img/Photo-8.png" alt="" class="class"></div>
+            <div class="explore__description">
+                <h3 class="description__h3">Sandomierz</h3>
+                <p class="description__p">
+                    Sandomierz is one of the oldest and historically most significant cities in Poland. Archeological
+                    finds
+                    around the city indicate that humans have inhabited the area since neolithic times. The city came
+                    into
+                    existence in the early Middle Ages, taking advantage of an excellent location at the junction of
+                    Vistula
+                    and San rivers, and on the path of important trade routes.
+                    <br><br>
+                    The first known historical mention of the city comes from the early 12th-century, when the
+                    chronicler
+                    Gallus Anonymus ranked it together with Kraków and Wrocław as one of the main cities of Poland. The
+                    testament (ca 1115-1118) of Bolesław III Wrymouth, in which he divided Poland among his sons,
+                    designated
+                    Sandomierz as the capital of one of the resulting principalities, the Duchy of Sandomierz.
+                </p>
+                <button class="description__btn">Check Offers</button>
+            </div>
+
+        </div>
+    </section>
+    <section class="enjoy">
+        <div class="enjoy__wrapper">
+            <h2 class="enjoy__h2">Enjoy your journey</h2>
+            <button class="enjoy__btn">Sign Up</button>
+            <p class="enjoy__p">You can also sign up on our <a href="" class="enjoy_a">newsletter</a></p>
+        </div>
+    </section>
+    <footer class="footer">
+        <h2 class="footer__h2">Polind</h2>
+        <img src="../img/Logo.svg" alt="" class="footer__img">
+        <p class="footer__p">All right reserved by KKacper</p>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
