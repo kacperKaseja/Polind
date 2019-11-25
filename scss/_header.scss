@@ -11,6 +11,7 @@
 
     &__wrapper {
         width: 100%;
+        margin: 10px 10px 0 10px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -73,7 +74,7 @@
     &__nav {
         display: none;
         // opacity: 0;
-        width: 60%;
+        width: 70%;
         color: white;
         transition: opacity 0.5s;
 
@@ -85,7 +86,6 @@
             opacity: 1;
         }
     }
-
 }
 
 .nav__list {
@@ -95,7 +95,6 @@
         color: white;
         margin: 10px 10px;
     }
-
 }
 
 .nav__anchor {
@@ -141,6 +140,13 @@
                 }
             }
         }
+    }
+}
 
+@media(min-width: 1024px) {
+    .nav__list {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
     }
 }

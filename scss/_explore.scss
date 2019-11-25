@@ -30,5 +30,14 @@
             @include button;
         }
     }
+}
 
+@media(min-width:768px) {
+    .explore {
+
+        &__wrapper {
+            width: 64%;
+        }
+
+    }
 }

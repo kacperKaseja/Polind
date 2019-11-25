@@ -21,6 +21,7 @@
 
 .header__wrapper {
   width: 100%;
+  margin: 10px 10px 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,7 +110,7 @@
 
 .header__nav {
   display: none;
-  width: 60%;
+  width: 70%;
   color: white;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
@@ -181,6 +182,18 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .nav__list {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
 .landing {
   background: url("../img/Photo.png") no-repeat;
   background-size: cover;
@@ -200,6 +213,7 @@
   color: white;
   font-size: 45px;
   padding: 50px 0;
+  text-shadow: 2px 2px 2px black;
 }
 
 .landing__h1-span {
@@ -223,6 +237,10 @@
   margin-top: 70px;
 }
 
+.landing__img-wrapper {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .landing__h1 {
     font-size: 80px;
@@ -234,6 +252,33 @@
     font-size: 25px;
     padding: 20px 40px;
     border-radius: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .landing {
+    height: 80vh;
+    position: relative;
+  }
+  .landing__img-wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  .img-wrapper__items {
+    width: 180px;
+  }
+  .img-wrapper-item {
+    width: 100%;
   }
 }
 
@@ -442,6 +487,12 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .where-go {
+    padding-top: 150px;
+  }
+}
+
 .explore {
   padding: 20px;
   background-color: #ecf3ff;
@@ -478,6 +529,12 @@
   font-weight: 700;
   color: #B98000;
   margin: 30px 0;
+}
+
+@media (min-width: 768px) {
+  .explore__wrapper {
+    width: 64%;
+  }
 }
 
 .enjoy {
