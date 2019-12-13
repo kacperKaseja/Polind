@@ -244,15 +244,17 @@
 
 @media (min-width: 768px) {
   .landing__h1 {
-    font-size: 80px;
+    font-size: 70px;
+    padding: 10px 0;
   }
   .landing__p1 {
-    font-size: 30px;
+    font-size: 16px;
   }
   .landing__button {
-    font-size: 25px;
+    font-size: 16px;
     padding: 20px 40px;
     border-radius: 50px;
+    margin: 10px 0;
   }
 }
 
@@ -294,7 +296,7 @@
   }
   .img-wrapper__items {
     position: relative;
-    width: 200px;
+    width: 17vw;
   }
   .img-wrapper__items h3 {
     position: absolute;
@@ -312,7 +314,8 @@
 
 @media (min-width: 1400px) {
   .img-wrapper__items {
-    width: 250px;
+    width: 17vw;
+    height: 300px;
   }
 }
 
@@ -568,6 +571,25 @@
 @media (min-width: 768px) {
   .explore__wrapper {
     width: 64%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .explore__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .explore__h2 {
+    width: 100%;
+  }
+  .explore .explore__img img {
+    width: 45%;
+  }
+  .explore__description {
+    width: 45%;
   }
 }
 

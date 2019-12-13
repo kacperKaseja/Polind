@@ -43,21 +43,25 @@
 
 
 @media(min-width:1024px) {
-    // .explore__wrapper {
-    //     display: flex;
-    //     flex-flow: row wrap;
-    // }
+    .explore {
+        &__wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
 
-    // // .explore__wrapper>* {
-    // //     flex: 1 100%;
-    // // }
+        &__h2 {
+            width: 100%;
+        }
 
-    // // .explore__img {
-    // //     flex: 1 50%;
-    // // }
 
-    // // .explore__description {
-    // //     flex: 1 50%;
-    // // }
+        .explore__img {
+            img {
+                width: 45%;
+            }
+        }
 
+        &__description {
+            width: 45%;
+        }
+    }
 }
