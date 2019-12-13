@@ -38,6 +38,26 @@
         &__wrapper {
             width: 64%;
         }
-
     }
+}
+
+
+@media(min-width:1024px) {
+    // .explore__wrapper {
+    //     display: flex;
+    //     flex-flow: row wrap;
+    // }
+
+    // // .explore__wrapper>* {
+    // //     flex: 1 100%;
+    // // }
+
+    // // .explore__img {
+    // //     flex: 1 50%;
+    // // }
+
+    // // .explore__description {
+    // //     flex: 1 50%;
+    // // }
+
 }
