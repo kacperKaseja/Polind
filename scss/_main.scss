@@ -99,8 +99,10 @@
             bottom: 0;
             left: 50%;
             transform: translate(-50%, 50%);
+
         }
     }
+
 
 
 
@@ -108,12 +110,19 @@
         position: relative;
         width: 17vw;
 
+
         h3 {
             position: absolute;
             left: 50%;
             bottom: 30px;
             transform: translate(-50%, -50%);
             color: white;
+            opacity: 0;
+            transition: 0.5s;
+        }
+
+        &:hover h3 {
+            opacity: 1;
         }
     }
 

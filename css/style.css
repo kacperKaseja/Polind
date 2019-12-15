@@ -305,6 +305,12 @@
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     color: white;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .img-wrapper__items:hover h3 {
+    opacity: 1;
   }
   .img-wrapper-item {
     width: 100%;
