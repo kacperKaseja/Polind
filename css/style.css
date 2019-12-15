@@ -581,15 +581,28 @@
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 80%;
   }
   .explore__h2 {
     width: 100%;
   }
-  .explore .explore__img img {
+  .explore .explore__img {
     width: 45%;
+    max-width: 450px;
+    margin-right: 30px;
   }
   .explore__description {
     width: 45%;
+    max-width: 450px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 
