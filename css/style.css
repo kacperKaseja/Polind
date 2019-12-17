@@ -528,10 +528,23 @@
             flex: 0 1 45%;
     height: 250px;
     max-width: 300px;
+    margin: 20px 10px;
+  }
+  .container__item:hover {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+    background-color: white;
+    border: 1px solid black;
+  }
+  .container__item:hover .containet__item-btn {
+    background: #FFC74A;
+    color: white;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) and (min-width: 1024px) {
   .where-go {
     padding-top: 150px;
   }
